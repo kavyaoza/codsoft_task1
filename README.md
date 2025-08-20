@@ -1,60 +1,60 @@
-# 🎬 Movie Recommendation System (Flask + Machine Learning)
+# 🎬 CODSOFT Internship -- Task: Movie Recommendation System
 
-A simple yet powerful **content-based Movie Recommendation System**
-built using **Flask, Pandas, and Scikit-learn**.\
-This project recommends movies similar to a user-selected movie based on
-**genre, director, and description** using **TF-IDF vectorization** and
-**cosine similarity**.
+This project is created as part of my **CODSOFT AI/ML Internship**.\
+It is a **Content-Based Movie Recommendation System** built using
+**Flask, Pandas, and Scikit-learn**.
 
 ------------------------------------------------------------------------
 
 ## 🚀 Features
 
--   🔍 Search and select movies from dropdown
--   🎥 View detailed movie information (title, genre, director, rating,
-    description)
--   🤖 Get top-5 recommended movies similar to the selected one
--   ⚡ Clean and modern UI with responsive design
--   📊 Machine learning powered by **TF-IDF + Cosine Similarity**
+-   🔍 Select a movie from dropdown
+-   🎥 View detailed information:
+    -   Title
+    -   Genre
+    -   Director
+    -   Rating
+    -   Description
+-   🤖 Get **Top-5 recommended movies** based on similarity
+-   ⚡ Clean and responsive UI
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack
 
--   **Frontend:** HTML, CSS, JavaScript\
 -   **Backend:** Flask (Python)\
+-   **Frontend:** HTML, CSS, JavaScript\
 -   **Libraries:** Pandas, Scikit-learn, Scipy\
--   **Dataset:** `movies.csv` (movie metadata), `ratings.csv` (ratings
-    data)
+-   **Dataset:** `movies.csv` & `ratings.csv`
 
 ------------------------------------------------------------------------
 
 ## 📂 Project Structure
 
-    movie-recommendation-flask/
+    Task1_MovieRecommendation/
     │
-    ├── app.py               # Main Flask app
-    ├── requirement.txt      # Python dependencies
+    ├── app.py               # Flask backend
+    ├── requirement.txt      # Dependencies
     ├── static/
     │   └── style.css        # CSS styling
     ├── templates/
-    │   └── index.html       # Frontend template
-    ├── data/
-    │   ├── movies.csv       # Movie dataset
-    │   └── ratings.csv      # Ratings dataset
+    │   └── index.html       # Frontend
+    └── data/
+        ├── movies.csv       # Movie dataset
+        └── ratings.csv      # Ratings dataset
 
 ------------------------------------------------------------------------
 
 ## ⚙️ Installation & Setup
 
-1.  **Clone the repository**
+1.  Clone this repository
 
     ``` bash
-    git clone https://github.com/yourusername/movie-recommendation-flask.git
-    cd movie-recommendation-flask
+    git clone https://github.com/yourusername/codsoft_taskno.git
+    cd codsoft_taskno/Task1_MovieRecommendation
     ```
 
-2.  **Create a virtual environment (optional but recommended)**
+2.  Create a virtual environment (optional)
 
     ``` bash
     python -m venv venv
@@ -62,19 +62,19 @@ This project recommends movies similar to a user-selected movie based on
     venv\Scripts\activate      # Windows
     ```
 
-3.  **Install dependencies**
+3.  Install dependencies
 
     ``` bash
     pip install -r requirement.txt
     ```
 
-4.  **Run the Flask app**
+4.  Run the Flask app
 
     ``` bash
     python app.py
     ```
 
-5.  **Open in browser**
+5.  Open in browser
 
         http://127.0.0.1:5000/
 
@@ -82,52 +82,28 @@ This project recommends movies similar to a user-selected movie based on
 
 ## 📊 How It Works
 
-1.  Load movies dataset (`movies.csv`).\
+1.  Load movies dataset (`movies.csv`)\
 2.  Create a **feature vector** combining `genre`, `director`, and
-    `description`.\
-3.  Apply **TF-IDF Vectorization** to convert text into numerical
-    features.\
-4.  Compute **cosine similarity** between movies.\
-5.  When a user selects a movie, return the **Top-5 most similar
-    movies**.
+    `description`\
+3.  Apply **TF-IDF Vectorization** → convert text into numbers\
+4.  Compute **cosine similarity** between movies\
+5.  Recommend the **Top-5 most similar movies**
 
 ------------------------------------------------------------------------
 
-## 🖼️ Screenshots
+## ✅ Internship Requirement
 
-### 🎥 Home Page
-
-> Dropdown to select movies & button to fetch recommendations.
-
-### 📊 Recommendations
-
-> Displays selected movie details and recommended movies.
-
-------------------------------------------------------------------------
-
-## ✅ Requirements
-
--   Python 3.8+\
--   Flask\
--   Pandas\
--   Scikit-learn\
--   Scipy
-
-(Already listed in `requirement.txt`)
-
-------------------------------------------------------------------------
-
-## 📌 Future Improvements
-
--   Add **collaborative filtering** (user-based recommendations)
--   Include **movie posters & images**
--   Deploy to **Heroku / Render**
--   Add user login and personalized recommendations
+-   Task completed as part of **CODSOFT AI/ML Internship**\
+-   Maintained proper **GitHub repository (codsoft_taskno)**\
+-   To be shared on **LinkedIn** tagging `@codsoft`
 
 ------------------------------------------------------------------------
 
 ## 👨‍💻 Author
 
--   Developed by *\[Kavya Oza\]*\
--   ✉️ Contact: kavyaoza54@gmail.com\
--   🌐 Portfolio/GitHub: \[your-link-here\]
+-   Name: *Kavya Oza*\
+-   Email: *kavyaoza54@gmail.com*\
+-   GitHub: [yourusername](https://github.com/yourusername)\
+-   LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-link)
+
+------------------------------------------------------------------------
