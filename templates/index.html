@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Recommendation System</h1>
+            <p class="subtitle">Find movies you'll love</p>
+        </header>
+
+        <div class="search-section">
+            <select id="movieSelect">
+                <option value="">Select a movie...</option>
+                {% for movie in movies %}
+                    <option value="{{ movie.id }}">{{ movie.title }} ({{ movie.year }})</option>
+                {% endfor %}
+            </select>
+            <button id="recommendBtn">Get Recommendations</button>
+        </div>
+
+        <div class="results-container">
+            <div class="selected-movie" id="selectedMovie">
+                <p>Select a movie to see details</p>
+            </div>
+            
+            <div class="recommendations" id="recommendations">
+                <h2>Recommended Movies</h2>
+                <div class="movies-grid" id="moviesGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const movieSelect = document.getElementById('movieSelect');
+            const recommendBtn = document.getElementById('recommendBtn');
+            const selectedMovieDiv = document.getElementById('selectedMovie');
+            const moviesGrid = document.getElementById('moviesGrid');
+
+            // Load movie details when selected
+            movieSelect.addEventListener('change', async (e) => {
+                if (!e.target.value) return;
+                
+                const response = await fetch(`/movie/${e.target.value}`);
+                const movie = await response.json();
+                
+                selectedMovieDiv.innerHTML = `
+                    <div class="movie-card expanded">
+                        <h2>${movie.title} (${movie.year})</h2>
+                        <p><strong>Genre:</strong> ${movie.genre}</p>
+                        <p><strong>Director:</strong> ${movie.director}</p>
+                        <p><strong>Rating:</strong> ${movie.rating}/10</p>
+                        <p><strong>Description:</strong> ${movie.description}</p>
+                    </div>
+                `;
+            });
+
+            // Get recommendations
+            recommendBtn.addEventListener('click', async () => {
+                if (!movieSelect.value) {
+                    alert('Please select a movie first');
+                    return;
+                }
+
+                const response = await fetch('/recommend', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        movieId: movieSelect.value,
+                        method: 'content'
+                    })
+                });
+                
+                const recommendations = await response.json();
+                displayRecommendations(recommendations);
+            });
+
+            // Display recommendations
+            function displayRecommendations(movies) {
+                moviesGrid.innerHTML = '';
+                
+                movies.forEach(movie => {
+                    const card = document.createElement('div');
+                    card.className = 'movie-card';
+                    card.innerHTML = `
+                        <h3>${movie.title} (${movie.year})</h3>
+                        <p><strong>Genre:</strong> ${movie.genre}</p>
+                        <p><strong>Similarity:</strong> ${movie.similarity.toFixed(1)}%</p>
+                        <button class="view-details" data-id="${movie.id}">View Details</button>
+                    `;
+                    moviesGrid.appendChild(card);
+                });
+
+                // Add event listeners to detail buttons
+                document.querySelectorAll('.view-details').forEach(btn => {
+                    btn.addEventListener('click', async (e) => {
+                        const movieId = e.target.dataset.id;
+                        const response = await fetch(`/movie/${movieId}`);
+                        const movie = await response.json();
+                        
+                        selectedMovieDiv.innerHTML = `
+                            <div class="movie-card expanded">
+                                <h2>${movie.title} (${movie.year})</h2>
+                                <p><strong>Genre:</strong> ${movie.genre}</p>
+                                <p><strong>Director:</strong> ${movie.director}</p>
+                                <p><strong>Rating:</strong> ${movie.rating}/10</p>
+                                <p><strong>Description:</strong> ${movie.description}</p>
+                            </div>
+                        `;
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
