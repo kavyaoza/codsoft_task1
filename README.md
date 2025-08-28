@@ -91,6 +91,22 @@ It is a **Content-Based Movie Recommendation System** built using
 
 ------------------------------------------------------------------------
 
+## 📸 Screenshots
+
+### 🔹 Home Page (Before Upload)
+![Home Page](assets/screenshot_home.png)
+
+### 🔹 Uploaded Image with Caption
+![Result Page](assets/screenshot_result.png)
+
+---
+
+## 🎥 Demo Video
+👉 [Watch Demo Video](https://www.linkedin.com)  
+*(Replace with your actual LinkedIn post link after uploading your task demo)*
+
+--- 
+
 ## ✅ Internship Requirement
 
 -   Task completed as part of **CODSOFT AI/ML Internship**\
@@ -103,7 +119,8 @@ It is a **Content-Based Movie Recommendation System** built using
 
 -   Name: *Kavya Oza*\
 -   Email: *kavyaoza54@gmail.com*\
--   GitHub: [yourusername](https://github.com/yourusername)\
+-   GitHub: (https://github.com/yourusername)](https://github.com/kavyaoza)\
 -   LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-link)
 
 ------------------------------------------------------------------------
+
