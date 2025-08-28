@@ -1,6 +1,6 @@
 # 🎬 CODSOFT Internship -- Task: Movie Recommendation System
 
-This project is created as part of my **CODSOFT AI/ML Internship**.\
+This project is created as part of my **CODSOFT AI Internship**.\
 It is a **Content-Based Movie Recommendation System** built using
 **Flask, Pandas, and Scikit-learn**.
 
@@ -103,14 +103,13 @@ It is a **Content-Based Movie Recommendation System** built using
 
 ## 🎥 Demo Video
 👉 [Watch Demo Video](https://www.linkedin.com)  
-*(Replace with your actual LinkedIn post link after uploading your task demo)*
 
 --- 
 
 ## ✅ Internship Requirement
 
--   Task completed as part of **CODSOFT AI/ML Internship**\
--   Maintained proper **GitHub repository (codsoft_taskno)**\
+-   Task completed as part of **CODSOFT AI Internship**\
+-   Maintained proper **GitHub repository (codsoft_task1)**\
 -   To be shared on **LinkedIn** tagging `@codsoft`
 
 ------------------------------------------------------------------------
@@ -123,4 +122,5 @@ It is a **Content-Based Movie Recommendation System** built using
 -   LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-link)
 
 ------------------------------------------------------------------------
+
 
