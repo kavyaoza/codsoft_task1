@@ -116,11 +116,12 @@ It is a **Content-Based Movie Recommendation System** built using
 
 ## 👨‍💻 Author
 
--   Name: *Kavya Oza*\
--   Email: *kavyaoza54@gmail.com*\
--   GitHub: (https://github.com/yourusername)](https://github.com/kavyaoza)\
--   LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-link)
+-   Name: *Kavya Oza*
+-   Email: *kavyaoza54@gmail.com*
+-   GitHub: (https://github.com/kavyaoza)
+-   LinkedIn: (www.linkedin.com/in/kavya-oza-a64220295)
 
 ------------------------------------------------------------------------
+
 
 
