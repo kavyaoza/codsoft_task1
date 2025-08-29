@@ -102,7 +102,7 @@ It is a **Content-Based Movie Recommendation System** built using
 ---
 
 ## 🎥 Demo Video
-👉 [Watch Demo Video]([https://www.linkedin.com](https://www.linkedin.com/posts/kavya-oza-a64220295_internship-ai-python-activity-7367155678475366402-DyXQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdmz-wB9BJG6LYEIQ_YaQ39UdhoqyMOS6g))  
+👉 [Watch Demo Video](https://www.linkedin.com/posts/kavya-oza-a64220295_internship-ai-python-activity-7367155678475366402-DyXQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdmz-wB9BJG6LYEIQ_YaQ39UdhoqyMOS6g)  
 
 --- 
 
@@ -118,10 +118,11 @@ It is a **Content-Based Movie Recommendation System** built using
 
 -   Name: *Kavya Oza*
 -   Email: *kavyaoza54@gmail.com*
--   GitHub: (https://github.com/kavyaoza)
--   LinkedIn: (www.linkedin.com/in/kavya-oza-a64220295)
+-   GitHub: [Github Profile](https://github.com/kavyaoza)
+-   LinkedIn: [LinkedIn Profile](www.linkedin.com/in/kavya-oza-a64220295)
 
 ------------------------------------------------------------------------
+
 
 
 
